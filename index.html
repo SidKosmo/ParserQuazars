@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Статистика сообщений</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; margin: 20px; }
+        table { width: 80%; margin: auto; border-collapse: collapse; }
+        th, td { border: 1px solid #ddd; padding: 10px; }
+        th { background-color: #f4f4f4; }
+        button { padding: 10px 20px; margin: 20px; cursor: pointer; }
+    </style>
+</head>
+<body>
+
+    <h1>📊 Статистика сообщений</h1>
+    <button onclick="scanMessages()">🔄 Запустить сканирование</button>
+    <button onclick="scrapeMap()">🔄 Запустить сканирование Вселенной</button>
+    <p id="status"></p>
+
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Сообщение</th>
+                <th>Время</th>
+            </tr>
+        </thead>
+        <tbody id="messagesTable"></tbody>
+    </table>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
